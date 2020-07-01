@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="amdbtn">Asynchronous Module Definition</button>
+    <script data-main="js/config.js" src="require.js"></script>
+    <script>
+        require(['config'], function(){
+            require(['customScripts/jqueryFile']);
+        });
+    </script>
+</body>
+</html>

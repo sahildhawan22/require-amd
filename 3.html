@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script data-main="js/config.js" src="require.js"></script>
+    <script>
+        //alert("Before loading");
+        require(['js/config'], function(){
+            alert("After loading");
+            console.log("In callback function");
+        });
+    </script>
+</body>
+</html>
+
+<!-- 
+    Run 1 alert at that time and see Network tab.
+ -->
